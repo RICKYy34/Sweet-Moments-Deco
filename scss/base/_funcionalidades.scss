@@ -1,0 +1,40 @@
+// Variables
+$primary-color: #d87d1f;
+$secondary-color: #f8ebeb;
+$accent-color: #e91e63;
+$text-color: #555;
+$font-family: "Maname", serif;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$border-radius: 8px;
+
+// Mixins
+@mixin box-shadow($shadow) {
+    box-shadow: $shadow;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin transition($properties...) {
+    transition: $properties;
+}
+
+// Extends
+%card-styles {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    @include border-radius($border-radius);
+    @include box-shadow($box-shadow);
+}
+
+$colors: (
+primary: #d87d1f,
+secondary: #e91e63,
+accent: #007bff,
+background: #f8ebeb,
+white: #fff,
+gray-dark: #555,
+gray-light: #666,
+highlight: plum,
+);

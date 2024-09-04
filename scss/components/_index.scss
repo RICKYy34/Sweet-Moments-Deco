@@ -1,0 +1,132 @@
+.estrella {
+    width: 100%;
+    height: auto;
+    h3 {
+        color: #d87d1f;
+    }
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.product-card {
+@extend %card-styles;
+    padding: 15px;
+    text-align: center;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    img {
+        max-width: 100%;
+        height: 390px;
+        @include border-radius ($border-radius)
+    }
+    h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    p {
+        font-size: 14px;
+        color: $text-color;
+        margin: 10px 0;
+    }
+    .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: $accent-color;
+        margin: 10px 0;
+    }
+    button {
+        background-color: #e91e63;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        @include border-radius(5px);
+        cursor: pointer;
+        @include transition(background-color 0.3 ease);
+        &:hover {
+            background-color: darken($accent-color, 10%);
+        }
+    }
+}
+
+.quienes-somos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    div {
+        width: 75%;
+    }
+    h2, h3 {
+        font-size: 20px;
+        color: $primary-color;
+    }
+    p {
+        font-size: 18px;
+    }
+    img {
+        width: 195px;
+        height: 347px;
+    }
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    @include box-shadow($box-shadow);
+    @include border-radius($border-radius);
+    margin: 0 auto;
+}
+
+.texto {
+    flex: 1;
+    margin-right: 20px;
+    h3 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    h4 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    a {
+        display: block;
+        margin-bottom: 20px;
+        color: #007bff;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    max-width: 50%;
+    align-self: flex-start;
+    div {
+        overflow: hidden;
+        @include border-radius($border-radius);
+        @include box-shadow($box-shadow);
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%;
+    }
+}

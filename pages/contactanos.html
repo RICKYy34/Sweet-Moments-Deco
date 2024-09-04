@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description"
+        content="En Sweet Moments Deco, ofrecemos productos decorativos únicos como porta vasos, cuadros bordados, almohadones bordados y alfombras tufting. Contacta con nosotros para más información.">
+    <meta name="keywords"
+        content="decoración, porta vasos, cuadros bordados, almohadones bordados, alfombras tufting, decoración del hogar, productos decorativos, diseño de interiores, accesorios para el hogar, artesanía decorativa, decoración personalizada, artículos de decoración, tendencias en decoración, alfombras personalizadas, portavasos elegantes, cuadros artesanales, almohadones únicos, alfombras modernas, decoración creativa, Sweet Moments Deco">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <!-- link para boostrap -->
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <title>Sweet Moments Deco</title>
 </head>
 
@@ -17,65 +22,66 @@
                 <a class="navbar-brand" href="../index.html">
                     <img src="../img/logo-sweetmoments.png" alt="logo de la pagina">
                 </a>
-                <h1>Sweet Moments Deco</h1>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./proyectos.html">Proyectos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contactanos.html">Contactanos</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Productos
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./productos.html">Porta Vasos</a></li>
-                                    <li><a class="dropdown-item" href="./productos.html">Cuadros Bordados</a></li>
-                                    <li><a class="dropdown-item" href="./productos.html">Almohadones Bordados</a></li>
-                                    <li><a class="dropdown-item" href="./productos.html">Alfombras Tufting</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                <!-- <h1>Sweet Moments Deco</h1> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./productos.html">Porta Vasos</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Cuadros Bordados</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Almohadones Bordados</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Alfombras Tufting</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
+            </div>
             </div>
         </nav>
     </header>
     <main>
         <h2>Contactate con nosotros</h2>
-        <form action="">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name=nombre id="nombre" placeholder="Nombre">
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" class="form-control" placeholder="Tu nombre" required>
             </div>
-            <div>
-                <label for="Numero de Telefono">Numero de Telefono:</label>
-                <input type="number" placeholder="Telefono / Whatsapp">
+            <div class="form-group">
+                <label for="phone">Número De Teléfono</label>
+                <input type="tel" id="phone" class="form-control" placeholder="Tu número de teléfono" required>
             </div>
-            <div>
-                <label for="Email">Email:</label>
-                <input type="email" placeholder="Email">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Tu email" required>
             </div>
-            <div>
-                <label for="Dejanos tu mensaje">Dejanos tu mensaje:</label>
-                <textarea name="" id="" placeholder="Dejanos tu mensaje"></textarea>
+            <div class="form-group">
+                <label for="message">Dejanos tu mensaje</label>
+                <textarea id="message" class="form-control" rows="5" placeholder="Escribe tu mensaje aquí..."
+                    required></textarea>
             </div>
-            <div>
-                <input type="submit">
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Enviar</button>
             </div>
         </form>
     </main>
@@ -86,7 +92,8 @@
                 <h3>Seguinos en</h3>
                 <div>
                     <a href="https://www.instagram.com/sweet_moments_deco?igsh=MWt1bTlkd2VhMmpvNw==" target="_blank">
-                        <img src="../img/instagram-logo.svg" alt="logo de instagram, con redireccionamiento a la pagina">
+                        <img src="../img/instagram-logo.svg"
+                            alt="logo de instagram, con redireccionamiento a la pagina">
                     </a>
                 </div>
                 <div>
